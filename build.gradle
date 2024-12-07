@@ -33,6 +33,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	//콘솔 로그 출력
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
 	implementation group: 'commons-codec', name: 'commons-codec', version: '1.9'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
@@ -42,6 +43,18 @@ dependencies {
 	implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
 	implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
 	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	//액추에이터
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	//프로메테우스
+	implementation 'io.micrometer:micrometer-registry-prometheus'
+
+	// ⭐1. Spring boot 3.x이상에서 QueryDsl 패키지를 정의하는 방법
+    // queryDsl 관련 코드생성 기능 제공
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+   // queryDsl 라이브러리
+	annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
+	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 }
 
 dependencyManagement {

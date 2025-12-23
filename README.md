@@ -55,5 +55,5 @@
 
 ## API 테스트
 
-Swagger UI를 통해 API 테스트가 가능합니다.
-
+- Swagger UI를 통해 API 테스트가 가능합니다.
+- http://localhost:8080/swagger-ui/index.html
